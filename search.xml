@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2021/10/30/shu-xue-fen-xi-mei-ri-yi-ti-2021.10.30/"/>
+      <url>/2021/10/30/shu-xue-fen-xi-mei-ri-yi-ti-2021.10.30/</url>
+      
+        <content type="html"><![CDATA[<h1 id="数学分析《每日一题》–-2021-10-30"><a href="#数学分析《每日一题》–-2021-10-30" class="headerlink" title="数学分析《每日一题》– 2021.10.30"></a>数学分析《每日一题》– 2021.10.30</h1><p>$$<br>\label{con:inventoryflow}\tag{1}\large\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}<br>\int_{1}^{\frac{k}{n}}<br>e^{-{y}^{2}}dy<br>$$</p><p>首先，有极限：<br>$$<br>\begin{equation}\tag{1.1}<br>\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}<br>\end{equation}<br>$$<br>所以对待求极限$$\eqref{con:inventoryflow}$$​，我们有：<br>$$<br>\begin{aligned}<br>\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}<br>\int_{1}^{\frac{k}{n}}<br>e^{-{y}^{2}}dy&amp;=\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy<br>\&amp;=e\int_{0}^{1}<br>\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx<br>\&amp;=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx<br>\&amp;=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx<br>\&amp;=-e \int_{0}^{1} ye^{-y^2}dy<br>\&amp;=\frac{1-e}{2}<br>\end{aligned}<br>$$</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数学分析《每日一题》--2021.10.30</title>
+      <link href="/2021/10/30/2021-10-30/"/>
+      <url>/2021/10/30/2021-10-30/</url>
+      
+        <content type="html"><![CDATA[<p>$$<br>\label{con:inventoryflow}\tag{1}\large\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}<br>\int_{1}^{\frac{k}{n}}<br>e^{-{y}^{2}}dy<br>$$</p><p>首先，有极限：<br>$$<br>\begin{equation}\tag{1.1}<br>\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}<br>\end{equation}<br>$$<br>所以对待求极限​，我们有：<br>$$<br>\begin{aligned}<br>\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}<br>\int_{1}^{\frac{k}{n}}<br>e^{-{y}^{2}}dy&amp;=\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy<br>\\&amp;=e\int_{0}^{1}<br>\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx<br>\\&amp;=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx<br>\\&amp;=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx<br>\\&amp;=-e \int_{0}^{1} ye^{-y^2}dy<br>\\&amp;=\frac{1-e}{2}<br>\end{aligned}<br>$$</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数学分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/10/28/hello-world/"/>
       <url>/2021/10/28/hello-world/</url>
