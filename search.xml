@@ -8,7 +8,7 @@
       <link href="/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/"/>
       <url>/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/</url>
       
-        <content type="html"><![CDATA[<p>这是一道非常常见的题，这里简单写一下。</p><p>首先对$\,e\,$进行$\,Taylor\,$展开：</p><script type="math/tex; mode=display">\tag{1.1}e=e^x|_{x=1}=\sum_{k=0}^{n}[\frac{1}{n}+\frac{1}{n+1}+\frac{e^{\theta_n}}{(n+2)!}]\;(0<{\theta_n}<1).</script><p>代入原式，得：</p><script type="math/tex; mode=display">\begin{aligned}原式&=\lim_{n\rightarrow\infty}n\tan\{2{\pi}n![\,\sum_{k=0}^{n}\frac{1}{k!}+\frac{1}{(n+1)!}+\frac{e^{\theta_n}}{(n+2)!}\,]\\\\&=\lim_{n\rightarrow\infty}n\tan{[\frac{2\pi}{(n+1)}}+\frac{2{\pi}e^{\theta_n}}{(n+1)(n+2)}]\\\\&=\lim_{n\rightarrow\infty}\frac{2{\pi}n}{(n+1)}+\frac{n}{(n+1)(n+2)}\,\cdot\,2\pi e^{\theta_n}\\\\&=2\pi\end{aligned}</script>]]></content>
+        <content type="html"><![CDATA[<p>题目如下：</p><script type="math/tex; mode=display">\label{con:inventoryflow}\tag{1}\large\lim_{n\rightarrow\infty}\frac{\tan(2\pi n!e)}{\ln(1+\frac{1}{n})}</script><p>这是一道非常常见的题，这里简单写一下。</p><p>首先对$\,e\,$进行$\,Taylor\,$展开：</p><script type="math/tex; mode=display">\tag{1.1}e=e^x|_{x=1}=\sum_{k=0}^{n}[\frac{1}{n}+\frac{1}{n+1}+\frac{e^{\theta_n}}{(n+2)!}]\;(0<{\theta_n}<1).</script><p>代入原式，得：</p><script type="math/tex; mode=display">\begin{aligned}原式&=\lim_{n\rightarrow\infty}n\tan\{2{\pi}n![\,\sum_{k=0}^{n}\frac{1}{k!}+\frac{1}{(n+1)!}+\frac{e^{\theta_n}}{(n+2)!}\,]\\\\&=\lim_{n\rightarrow\infty}n\tan{[\frac{2\pi}{(n+1)}}+\frac{2{\pi}e^{\theta_n}}{(n+1)(n+2)}]\\\\&=\lim_{n\rightarrow\infty}\frac{2{\pi}n}{(n+1)}+\frac{n}{(n+1)(n+2)}\,\cdot\,2\pi e^{\theta_n}\\\\&=2\pi\end{aligned}</script>]]></content>
       
       
       <categories>
@@ -35,7 +35,7 @@
       <link href="/2021/10/30/2021-10-30/"/>
       <url>/2021/10/30/2021-10-30/</url>
       
-        <content type="html"><![CDATA[<p>首先，有极限：</p><script type="math/tex; mode=display">\begin{equation}\tag{1.1}\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}\end{equation}</script><p>所以对待求极限​，我们有：</p><script type="math/tex; mode=display">\begin{aligned}\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}\int_{1}^{\frac{k}{n}}e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy\\\\&=e\int_{0}^{1}\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx\\\\&=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx\\\\&=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx\\\\&=-e \int_{0}^{1} ye^{-y^2}dy\\\\&=\frac{1-e}{2}\end{aligned}</script>]]></content>
+        <content type="html"><![CDATA[<p>题目如下：</p><script type="math/tex; mode=display">\label{con:inventoryflow}\tag{1}\large\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}\int_{1}^{\frac{k}{n}}e^{-{y}^{2}}dy</script><p>首先，有极限：</p><script type="math/tex; mode=display">\begin{equation}\tag{1.1}\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}\end{equation}</script><p>所以对待求极限​，我们有：</p><script type="math/tex; mode=display">\begin{aligned}\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}\int_{1}^{\frac{k}{n}}e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy\\\\&=e\int_{0}^{1}\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx\\\\&=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx\\\\&=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx\\\\&=-e \int_{0}^{1} ye^{-y^2}dy\\\\&=\frac{1-e}{2}\end{aligned}</script>]]></content>
       
       
       <categories>
