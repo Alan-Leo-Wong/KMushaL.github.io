@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数学分析《每日一题》--2021.10.30, KageMusha">
+    <meta name="keywords" content="数学分析《每日一题》--2021.10.31, KageMusha">
     <meta name="description" content="命，一次又一次轻薄过，轻狂不知疲倦。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数学分析《每日一题》--2021.10.30 | KageMusha</title>
+    <title>数学分析《每日一题》--2021.10.31 | KageMusha</title>
     <link rel="icon" type="image/png" href="/blog.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,12 +315,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数学分析《每日一题》--2021.10.30</h1>
+                    <h1 class="description center-align post-title">数学分析《每日一题》--2021.10.31</h1>
                 </div>
             </div>
         </div>
@@ -465,7 +465,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-10-30
+                    2021-10-31
                 </div>
                 
 
@@ -479,7 +479,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    132
+                    52
                 </div>
                 
 
@@ -509,22 +509,25 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>首先，有极限：</p>
+                <p>这是一道非常常见的题，这里简单写一下。</p>
+<p>首先对$\,e\,$进行$\,Taylor\,$展开：</p>
 <script type="math/tex; mode=display">
-\begin{equation}\tag{1.1}
-\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}
-\end{equation}</script><p>所以对待求极限​，我们有：</p>
+\tag{1.1}
+e=e^x|_{x=1}=\sum_{k=0}^{n}[\frac{1}{n}+\frac{1}{n+1}+\frac{e^{\theta_n}}{(n+2)!}]\;
+(0<{\theta_n}<1).</script><p>代入原式，得：</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
-\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}
-\int_{1}^{\frac{k}{n}}
-e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy
-\\\\&=e\int_{0}^{1}
-\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx
-\\\\&=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx
-\\\\&=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx
-\\\\&=-e \int_{0}^{1} ye^{-y^2}dy
-\\\\&=\frac{1-e}{2}
+原式&=\lim_{n\rightarrow\infty}n
+\tan
+\{2{\pi}n![\,
+\sum_{k=0}^{n}\frac{1}{k!}+\frac{1}{(n+1)!}+\frac{e^{\theta_n}}{(n+2)!}\,]
+\\\\
+&=\lim_{n\rightarrow\infty}n\tan{[\frac{2\pi}{(n+1)}}
++\frac{2{\pi}e^{\theta_n}}{(n+1)(n+2)}]
+\\\\
+&=\lim_{n\rightarrow\infty}\frac{2{\pi}n}{(n+1)}+\frac{n}{(n+1)(n+2)}\,\cdot\,2\pi e^{\theta_n}
+\\\\
+&=2\pi
 \end{aligned}</script>
                 
             </div>
@@ -551,7 +554,7 @@ e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\f
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/10/30/2021-10-30/">http://example.com/2021/10/30/2021-10-30/</a>
+                    <a href="http://example.com/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/">http://example.com/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -766,9 +769,10 @@ e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\f
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/">
                     <div class="card-image">
@@ -786,9 +790,63 @@ e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\f
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category">
+                                    数学
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">数学分析</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9E%81%E9%99%90/">
+                        <span class="chip bg-color">极限</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/10/30/2021-10-30/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="数学分析《每日一题》--2021.10.30">
+                        
+                        <span class="card-title">数学分析《每日一题》--2021.10.30</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -812,43 +870,6 @@ e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\f
                         <span class="chip bg-color">极限</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/10/28/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            KMusha
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

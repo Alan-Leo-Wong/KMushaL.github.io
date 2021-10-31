@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>数学分析《每日一题》--2021.10.30</title>
-      <link href="/2021/10/30/2021-10-30/"/>
-      <url>/2021/10/30/2021-10-30/</url>
+      <title>数学分析《每日一题》--2021.10.31</title>
+      <link href="/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/"/>
+      <url>/2021/10/31/shu-xue-fen-xi-mei-ri-yi-ti-2021-10-31/</url>
       
-        <content type="html"><![CDATA[<p>$$<br>\label{con:inventoryflow}\tag{1}\large\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}<br>\int_{1}^{\frac{k}{n}}<br>e^{-{y}^{2}}dy<br>$$</p><p>首先，有极限：<br>$$<br>\begin{equation}\tag{1.1}<br>\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}<br>\end{equation}<br>$$<br>所以对待求极限​，我们有：<br>$$<br>\begin{aligned}<br>\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}<br>\int_{1}^{\frac{k}{n}}<br>e^{-{y}^{2}}dy&amp;=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy<br>\\&amp;=e\int_{0}^{1}<br>\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx<br>\\&amp;=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx<br>\\&amp;=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx<br>\\&amp;=-e \int_{0}^{1} ye^{-y^2}dy<br>\\&amp;=\frac{1-e}{2}<br>\end{aligned}<br>$$</p>]]></content>
+        <content type="html"><![CDATA[<p>这是一道非常常见的题，这里简单写一下。</p><p>首先对$\,e\,$进行$\,Taylor\,$展开：</p><script type="math/tex; mode=display">\tag{1.1}e=e^x|_{x=1}=\sum_{k=0}^{n}[\frac{1}{n}+\frac{1}{n+1}+\frac{e^{\theta_n}}{(n+2)!}]\;(0<{\theta_n}<1).</script><p>代入原式，得：</p><script type="math/tex; mode=display">\begin{aligned}原式&=\lim_{n\rightarrow\infty}n\tan\{2{\pi}n![\,\sum_{k=0}^{n}\frac{1}{k!}+\frac{1}{(n+1)!}+\frac{e^{\theta_n}}{(n+2)!}\,]\\\\&=\lim_{n\rightarrow\infty}n\tan{[\frac{2\pi}{(n+1)}}+\frac{2{\pi}e^{\theta_n}}{(n+1)(n+2)}]\\\\&=\lim_{n\rightarrow\infty}\frac{2{\pi}n}{(n+1)}+\frac{n}{(n+1)(n+2)}\,\cdot\,2\pi e^{\theta_n}\\\\&=2\pi\end{aligned}</script>]]></content>
       
       
       <categories>
@@ -22,6 +22,35 @@
             
             <tag> 数学分析 </tag>
             
+            <tag> 极限 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数学分析《每日一题》--2021.10.30</title>
+      <link href="/2021/10/30/2021-10-30/"/>
+      <url>/2021/10/30/2021-10-30/</url>
+      
+        <content type="html"><![CDATA[<p>首先，有极限：</p><script type="math/tex; mode=display">\begin{equation}\tag{1.1}\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}=\frac{1}{e}\end{equation}</script><p>所以对待求极限​，我们有：</p><script type="math/tex; mode=display">\begin{aligned}\lim_{n\rightarrow\infty}\frac{1}{\sqrt[n]{n!}}\sum_{k=1}^{n}\int_{1}^{\frac{k}{n}}e^{-{y}^{2}}dy&=\lim_{n\rightarrow\infty}\frac{e}{n} \sum_{k=1}^{n} \int_{1}^{\frac{k}{n}} e^{-{y}^{2}}dy\\\\&=e\int_{0}^{1}\bigg(\int_{1}^{x}e^{-{y}^{2}}dy \bigg)dx\\\\&=-e\int_{0}^{1} \bigg(\int_{x}^{1}e^{-{y}^{2}}dy \bigg)dx\\\\&=-e \int_{0}^{1}dy \int_{0}^{y} e^{-{y}^{2}}dx\\\\&=-e \int_{0}^{1} ye^{-y^2}dy\\\\&=\frac{1-e}{2}\end{aligned}</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学分析 </tag>
+            
+            <tag> 极限 </tag>
+            
         </tags>
       
     </entry>
@@ -33,7 +62,7 @@
       <link href="/2021/10/28/hello-world/"/>
       <url>/2021/10/28/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       
